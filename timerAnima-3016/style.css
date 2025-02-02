@@ -1,0 +1,28 @@
+.timer-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+#timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #333;
+  z-index: 1;
+}
+
+.timer-container svg circle {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: all 0.25s linear;
+}
+
+.timer-container svg #progress-circle {
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  stroke: #007bff;
+}
